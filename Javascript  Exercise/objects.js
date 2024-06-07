@@ -23,3 +23,18 @@ console.log(mandi.lastName);
 console.log(jonas['lastName']);
 const name='Name';
 console.log(jonas['first' +name]);
+//we use the bracket notation when we want to compute the property name as shown above,otherwise just use the dot notation
+
+//another importance of using bracket notation is application of the prompt function
+
+const interestedIn=prompt('What do you want to  know about jonas? firstName,LastName,age,job, and friends');
+console.log(jonas[interestedIn]);
+
+//adding elements in an object
+jonas.location='Kenya';
+console.log(jonas['location']);
+jonas['twitter']='@mashy2090';
+
+const sentence=`jonas has ${jonas.friends.length} friends,and his best friend is called ${jonas.friends[0]}`;
+
+console.log(sentence);
